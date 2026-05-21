@@ -1,0 +1,55 @@
+agents:
+  - id: basic_gatherer
+    type: FARMER
+    nameTemplate: "Basic Gatherer"
+    behavior:
+      strategy: SIMPLE_GATHER_AND_SELL
+      actionCooldownTicks: 2
+      professions:
+        - id: HERBALISM
+          startingLevel: 5
+      minSellPriceMultiplier: 0.85
+  - id: experienced_gatherer
+    type: FARMER
+    nameTemplate: "Experienced Gatherer"
+    behavior:
+      strategy: SIMPLE_GATHER_AND_SELL
+      actionCooldownTicks: 2
+      professions:
+        - id: HERBALISM
+          startingLevel: 50
+      minSellPriceMultiplier: 0.9
+  - id: alchemist
+    type: CRAFTER
+    nameTemplate: "Alchemist"
+    behavior:
+      strategy: PROFIT_BASED_CRAFTING
+      actionCooldownTicks: 1
+      professions:
+        - id: ALCHEMY
+          startingLevel: 25
+      minRoi: 0.20
+      maxGoldInvestmentRatio: 0.60
+  - id: casual_pve
+    type: CONSUMER
+    nameTemplate: "Casual PvE Consumer"
+    behavior:
+      strategy: NEED_BASED_CONSUMPTION
+      actionCooldownTicks: 1
+      demands:
+        - id: basic_potions
+          target:
+            category: POTION
+          quantityPerCycle: 3
+          cycleTicks: 24
+          priority: HIGH
+          maxPriceToleranceMultiplier: 1.40
+          consumeImmediatly: true
+        - id: basic_flasks
+          target:
+            category: FLASKS
+          quantityPerCycle: 1
+          cycleTicks: 72
+          priority: MEDIUM
+          maxPriceToleranceMultiplier: 1.25
+          consumeImmediatly: false

@@ -1,0 +1,55 @@
+recipes:
+  - id: minor_healing_potion_recipe
+    name: "Minor healing potion"
+    profession: ALCHEMY
+    requiredSkillLevel: 1
+    craftingTimeTicks: 3
+    output:
+      itemId: minor_healing_potion
+      quantity: 1
+    ingredients:
+      - itemId: silverthorn
+        quantity: 3
+      - itemId: crystal_vial
+        quantity: 1
+  - id: greater_healing_potion_recipe
+    name: "Greater healing potion"
+    profession: ALCHEMY
+    requiredSkillLevel: 50
+    craftingTimeTicks: 6
+    output:
+      itemId: greater_healing_potion
+      quantity: 1
+    ingredients:
+      - itemId: kingsblood
+        quantity: 3
+      - itemId: crystal_vial
+        quantity: 1
+  - id: minor_mana_potion_recipe
+    name: "Minor mana potion"
+    profession: ALCHEMY
+    requiredSkillLevel: 1
+    craftingTimeTicks: 4
+    output:
+      itemId: minor_mana_potion
+      quantity: 1
+    ingredients:
+      - itemId: sapphire_rose
+        quantity: 2
+      - itemId: crystal_vial
+        quantity: 1
+  - id: resistance_flask_recipe
+    name: "Resistance flask"
+    profession: ALCHEMY
+    requiredSkillLevel: 25
+    craftingTimeTicks: 7
+    output:
+      itemId: resistance_flask
+      quantity: 1
+    ingredients:
+      - itemId: sapphire_rose
+        quantity: 4
+      - itemId: silverthorn
+        quantity: 4
+      - itemId: crystal_vial
+        quantity: 1

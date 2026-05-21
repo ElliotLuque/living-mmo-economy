@@ -1,0 +1,9 @@
+world:
+  id: default
+  name: "Default MMO Economy"
+  description: "Small MMO Economy simulation focused on Herbalism, Alchemy and raid demand"
+simulation:
+  initialTick: 0
+  tickDurationMinutes: 5
+  randomSeed: 12345
+  maxTimelineEvents: 100

@@ -1,0 +1,9 @@
+professions:
+  - id: HERBALISM
+    name: "Herbalism"
+    type: GATHERING
+    maxLevel: 100
+  - id: ALCHEMY
+    name: "Alchemy"
+    type: CRAFTING
+    maxLevel: 100

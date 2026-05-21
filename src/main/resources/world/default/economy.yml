@@ -1,0 +1,11 @@
+economy:
+  market:
+    listingFeeRate: 0.01
+    transactionFeeRate: 0.05
+    defaultListingDurationTicks: 48
+  pricing:
+    initialPriceSource: BASE_PRICE
+    fallbackPriceMultiplier: 1.25
+    minPrice: 0.01
+  gold:
+    initialWorldGold: 10000

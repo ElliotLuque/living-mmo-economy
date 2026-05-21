@@ -1,0 +1,22 @@
+regions:
+  - id: greenwood
+    name: "Greenwood forest"
+    resourceNodes:
+      - id: greenwood_silverthorn_field
+        itemId: silverthorn
+        initialStock: 100
+        maxStock: 500
+        regenPerTick: 0.8
+      - id: greenwood_sapphire_rose_field
+        itemId: sapphire_rose
+        initialStock: 80
+        maxStock: 250
+        regenPerTick: 1.2
+  - id: bloodveil_lands
+    name: "Bloodveil Lands"
+    resourceNodes:
+      - id: bloodveil_lands_kingsblood_field
+        itemId: kingsblood
+        initialStock: 100
+        maxStock: 300
+        regenPerTick: 0.5

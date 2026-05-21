@@ -1,0 +1,58 @@
+items:
+  - id: silverthorn
+    name: "Silverthorn"
+    type: MATERIAL
+    category: HERBALISM_MATERIAL
+    rarity: COMMON
+    stackable: true
+    gathering:
+      professionId: HERBALISM
+      requiredLevel: 1
+  - id: kingsblood
+    name: "King's blood"
+    type: MATERIAL
+    category: HERBALISM_MATERIAL
+    rarity: COMMON
+    stackable: true
+    gathering:
+      professionId: HERBALISM
+      requiredLevel: 25
+  - id: sapphire_rose
+    name: "Sapphire Rose"
+    type: MATERIAL
+    category: HERBALISM_MATERIAL
+    rarity: COMMON
+    stackable: true
+    gathering:
+      professionId: HERBALISM
+      requiredLevel: 1
+  - id: minor_healing_potion
+    name: "Minor healing potion"
+    type: CONSUMABLE
+    category: POTION
+    rarity: COMMON
+    stackable: true
+  - id: greater_healing_potion
+    name: "Greater healing potion"
+    type: CONSUMABLE
+    category: POTION
+    rarity: RARE
+    stackable: true
+  - id: minor_mana_potion
+    name: "Minor mana potion"
+    type: CONSUMABLE
+    category: POTION
+    rarity: COMMON
+    stackable: true
+  - id: resistance_flask
+    name: "Resistance Flask"
+    type: CONSUMABLE
+    category: FLASK
+    rarity: UNCOMMON
+    stackable: true
+  - id: crystal_vial
+    name: "Crystal vial"
+    type: MATERIAL
+    category: VENDOR_MATERIAL
+    rarity: COMMON
+    stackable: true
