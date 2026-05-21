@@ -1,0 +1,150 @@
+# =========================
+# Java build outputs
+# =========================
+target/
+build/
+out/
+bin/
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+dependency-reduced-pom.xml
+release.properties
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+*.versionsBackup
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# =========================
+# Logs / runtime
+# =========================
+*.log
+logs/
+log/
+hs_err_pid*
+replay_pid*
+*.pid
+*.hprof
+*.dump
+*.heapdump
+
+# =========================
+# IntelliJ IDEA
+# =========================
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# =========================
+# Eclipse / STS
+# =========================
+.project
+.classpath
+.settings/
+.springBeans
+.sts4-cache/
+.factorypath
+.apt_generated/
+.apt_generated_tests/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+.history/
+
+# =========================
+# NetBeans
+# =========================
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.cache/
+tmp/
+temp/
+
+# =========================
+# Environment / secrets
+# =========================
+.env
+.env.*
+!.env.example
+*.local
+*.secret
+secrets/
+.envrc
+
+# =========================
+# Nix
+# =========================
+.direnv/
+result
+result-*
+
+# =========================
+# Docker / local infra
+# =========================
+docker-compose.override.yml
+.docker/
+volumes/
+data/
+
+# =========================
+# Test / coverage reports
+# =========================
+coverage/
+jacoco.exec
+*.ec
+site/
+surefire-reports/
+failsafe-reports/
+
+# =========================
+# Generated sources
+# =========================
+generated/
+generated-sources/
+generated-test-sources/
+
+# =========================
+# Misc
+# =========================
+*.bak
+*.orig
+*.rej
