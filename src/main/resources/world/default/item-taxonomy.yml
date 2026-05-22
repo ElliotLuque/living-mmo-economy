@@ -1,0 +1,16 @@
+itemTaxonomy:
+  categories:
+    - id: MATERIAL
+      name: "Material"
+      types:
+        - id: HERB
+          name: "Herb"
+        - id: VENDOR_SUPPLY
+          name: "Vendor supply"
+    - id: CONSUMABLE
+      name: "Consumable"
+      types:
+        - id: POTION
+          name: "Potion"
+        - id: FLASK
+          name: "Flask"

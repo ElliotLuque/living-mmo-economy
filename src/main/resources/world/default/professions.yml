@@ -3,7 +3,11 @@ professions:
     name: "Herbalism"
     type: GATHERING
     maxLevel: 100
+    progression:
+      xpPerLevel: 100
   - id: ALCHEMY
     name: "Alchemy"
     type: CRAFTING
     maxLevel: 100
+    progression:
+      xpPerLevel: 100

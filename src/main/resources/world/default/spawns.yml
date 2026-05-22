@@ -1,0 +1,21 @@
+spawns:
+  - agentId: basic_gatherer
+    count: 4
+    startingGold:
+      min: 5.00
+      max: 15.00
+  - agentId: experienced_gatherer
+    count: 2
+    startingGold:
+      min: 20.00
+      max: 60.00
+  - agentId: alchemist
+    count: 3
+    startingGold:
+      min: 80.00
+      max: 180.00
+  - agentId: casual_pve
+    count: 5
+    startingGold:
+      min: 30.00
+      max: 100.00

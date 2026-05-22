@@ -2,21 +2,48 @@ regions:
   - id: greenwood
     name: "Greenwood forest"
     resourceNodes:
-      - id: greenwood_silverthorn_field
+      - id: greenwood_silverthorn_patch
         itemId: silverthorn
-        initialStock: 100
-        maxStock: 500
-        regenPerTick: 0.8
+        initialStock: 250
+        maxStock: 600
+        regenPerTick: 3.0
+        gather:
+          baseAmount:
+            min: 2
+            max: 4
+          maxAmount: 7
+          skillScaling:
+            levelsPerBonusUnit: 12
+          professionXp:
+            base: 5
       - id: greenwood_sapphire_rose_field
         itemId: sapphire_rose
-        initialStock: 80
-        maxStock: 250
+        initialStock: 120
+        maxStock: 300
         regenPerTick: 1.2
+        gather:
+          baseAmount:
+            min: 1
+            max: 3
+          maxAmount: 6
+          skillScaling:
+            levelsPerBonusUnit: 10
+          professionXp:
+            base: 20
   - id: bloodveil_lands
     name: "Bloodveil Lands"
     resourceNodes:
-      - id: bloodveil_lands_kingsblood_field
+      - id: bloodveil_lands_kingsblood_patch
         itemId: kingsblood
-        initialStock: 100
-        maxStock: 300
-        regenPerTick: 0.5
+        initialStock: 60
+        maxStock: 200
+        regenPerTick: 0.4
+        gather:
+          baseAmount:
+            min: 1
+            max: 2
+          maxAmount: 3
+          skillScaling:
+            levelsPerBonusUnit: 15
+          professionXp:
+            base: 35

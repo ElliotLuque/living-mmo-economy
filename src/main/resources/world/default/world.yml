@@ -6,4 +6,5 @@ simulation:
   initialTick: 0
   tickDurationMinutes: 5
   randomSeed: 12345
+  snapshotEveryTicks: 5
   maxTimelineEvents: 100

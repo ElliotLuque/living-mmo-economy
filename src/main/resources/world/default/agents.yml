@@ -8,7 +8,22 @@ agents:
       professions:
         - id: HERBALISM
           startingLevel: 5
-      minSellPriceMultiplier: 0.85
+      gathering:
+        nodeSelection: HIGHEST_AVAILABLE_STOCK
+      pricing:
+        initialAsk:
+          mode: RANDOM_RANGE
+          min: 2.00
+          max: 8.00
+        reaction:
+          fastSoldOut:
+            withinTicks: 2
+            multiplier: 1.30
+          soldOut:
+            withinTicks: 8
+            multiplier: 1.15
+          expired:
+            multiplier: 0.85
   - id: experienced_gatherer
     type: FARMER
     nameTemplate: "Experienced Gatherer"
@@ -18,7 +33,22 @@ agents:
       professions:
         - id: HERBALISM
           startingLevel: 50
-      minSellPriceMultiplier: 0.9
+      gathering:
+        nodeSelection: WEIGHTED_BY_AVAILABLE_STOCK
+      pricing:
+        initialAsk:
+          mode: RANDOM_RANGE
+          min: 4.00
+          max: 14.00
+        reaction:
+          fastSoldOut:
+            withinTicks: 2
+            multiplier: 1.25
+          soldOut:
+            withinTicks: 8
+            multiplier: 1.12
+          expired:
+            multiplier: 0.88
   - id: alchemist
     type: CRAFTER
     nameTemplate: "Alchemist"
@@ -28,28 +58,68 @@ agents:
       professions:
         - id: ALCHEMY
           startingLevel: 25
-      minRoi: 0.20
-      maxGoldInvestmentRatio: 0.60
+      decision:
+        minRoi: 0.20
+        maxGoldInvestmentRatio: 0.60
+        maxUnsoldOutputStock: 5
+      exploration:
+        allowUnknownMarketCrafting: true
+        maxExplorationInvestmentRatio: 0.15
+        maxExplorationBatchSize: 1
+      pricing:
+        fallbackOutputAsk:
+          mode: COST_PLUS_RANDOM_MARKUP
+          minMarkup: 1.40
+          maxMarkup: 2.50
+        reaction:
+          fastSoldOut:
+            withinTicks: 2
+            multiplier: 1.25
+          soldOut:
+            withinTicks: 8
+            multiplier: 1.10
+          expired:
+            multiplier: 0.90
   - id: casual_pve
     type: CONSUMER
     nameTemplate: "Casual PvE Consumer"
     behavior:
       strategy: NEED_BASED_CONSUMPTION
       actionCooldownTicks: 1
+      income:
+        mode: NEED_BASED
+        source: QUESTING
+        work:
+          trigger: INSUFFICIENT_GOLD_FOR_DEMAND
+          durationTicks:
+            min: 3
+            max: 8
+          maxAttemptsPerDemandCycle: 3
+          rewardPerTick:
+            min: 8.00
+            max: 20.00
       demands:
         - id: basic_potions
           target:
-            category: POTION
+            categoryId: CONSUMABLE
+            typeId: POTION
           quantityPerCycle: 3
           cycleTicks: 24
           priority: HIGH
-          maxPriceToleranceMultiplier: 1.40
-          consumeImmediatly: true
-        - id: basic_flasks
+          urgency:
+            normalMultiplier: 1.00
+            unsatisfiedDemandMultiplier: 1.10
+            maxMultiplier: 2.50
+          consumeImmediately: true
+        - id: basic_flask
           target:
-            category: FLASKS
+            categoryId: CONSUMABLE
+            typeId: FLASK
           quantityPerCycle: 1
           cycleTicks: 72
           priority: MEDIUM
-          maxPriceToleranceMultiplier: 1.25
-          consumeImmediatly: false
+          urgency:
+            normalMultiplier: 0.70
+            unsatisfiedDemandMultiplier: 1.05
+            maxMultiplier: 2.00
+          consumeImmediately: true

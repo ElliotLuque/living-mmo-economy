@@ -1,9 +1,11 @@
 recipes:
   - id: minor_healing_potion_recipe
     name: "Minor healing potion"
-    profession: ALCHEMY
-    requiredSkillLevel: 1
+    professionId: ALCHEMY
+    requiredLevel: 1
     craftingTimeTicks: 3
+    professionXp:
+      base: 10
     output:
       itemId: minor_healing_potion
       quantity: 1
@@ -14,9 +16,11 @@ recipes:
         quantity: 1
   - id: greater_healing_potion_recipe
     name: "Greater healing potion"
-    profession: ALCHEMY
-    requiredSkillLevel: 50
+    professionId: ALCHEMY
+    requiredLevel: 50
     craftingTimeTicks: 6
+    professionXp:
+      base: 30
     output:
       itemId: greater_healing_potion
       quantity: 1
@@ -27,9 +31,11 @@ recipes:
         quantity: 1
   - id: minor_mana_potion_recipe
     name: "Minor mana potion"
-    profession: ALCHEMY
-    requiredSkillLevel: 1
+    professionId: ALCHEMY
+    requiredLevel: 1
     craftingTimeTicks: 4
+    professionXp:
+      base: 15
     output:
       itemId: minor_mana_potion
       quantity: 1
@@ -40,9 +46,11 @@ recipes:
         quantity: 1
   - id: resistance_flask_recipe
     name: "Resistance flask"
-    profession: ALCHEMY
-    requiredSkillLevel: 25
+    professionId: ALCHEMY
+    requiredLevel: 25
     craftingTimeTicks: 7
+    professionXp:
+      base: 25
     output:
       itemId: resistance_flask
       quantity: 1

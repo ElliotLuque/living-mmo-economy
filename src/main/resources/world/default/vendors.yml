@@ -1,0 +1,7 @@
+vendors:
+  - id: alchemy_supplier
+    name: "Alchemy supplier"
+    listings:
+      - itemId: crystal_vial
+        price: 2.00
+        stockMode: INFINITE
