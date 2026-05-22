@@ -28,7 +28,6 @@ YAML files
 9. [`agents.yml`](#agentsyml)
 10. [`spawns.yml`](#spawnsyml)
 11. [Reglas globales del motor](#reglas-globales-del-motor)
-12. [Checklist final](#checklist-final)
 
 ---
 
